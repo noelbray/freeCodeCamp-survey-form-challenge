@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html lang="en-US">
+
+<head>
+
+  <title>Survey Form</title>
+  
+  <meta charset="UTF-8" />
+  <meta name="author" content="Noel Bray" />
+  <meta name="description" 
+    content='The freeCodeCamp "Survey Form" challenge I completed on Codepen.' />
+  
+  <link rel="stylesheet" href="css/main.css" />
+  
+  <script defer src="js/main.js"></script>
+  
+  </head>
+  
+  <body>
+  
+  <noscript>
+    Sorry, your browser does not support JavaScript and unfurtunately, some 
+    website freatures may not work, some website functionality may be lost.
+  </noscript>
+  
+  <!-- At the moment, I'm not concerned with color and styling because I just want to complete the challenges, user stories. -->
+
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+
+    <p id="description">
+      Thank you for giving us your feedback, it will help us improve and serve you better.
+    </p>
+    
+  <form id="survey-form">
+    
+    <label id="name-label" for="name">Name: 
+      <input type="text" id="name" placeholder="Please Enter Full Name" required/>
+    </label>
+    <br/>
+    <br/>
+    <label id="email-label" for="email">Email: 
+      <input type="email" id="email" placeholder="Please Enter Valid Email Address" required/>
+    </label>
+    <br/>
+    <br/>
+    <label id="number-label" for="number">Enter Number Between 0 and 10:<br/>
+      <input type="number" id="number" placeholder="Please Enter Number" min="0" max="10"/>
+    </label>
+    <br/>
+    <br/>
+    <label for="dropdown">Select your favorite font:<br/></label>
+    <select id="dropdown">
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Arial">Arial</option>
+      <option value="Tahoma">Tahoma</option>
+      <option value="Monospace">Monospace</option>
+    </select>
+    <p>What is your favorite color?</p>
+    <label for="red">
+      <input id="red" type="radio" name="favorite-color" value="red"/> Red
+    </label>
+    <br/>
+    <label for="green">
+      <input id="green" type="radio" name="favorite-color" value="green"/> Green
+    </label>
+    <br/>
+    <label for="blue">
+      <input id="blue" type="radio" name="favorite-color" value="blue" /> Blue
+    </label>
+    <p>What information would you like us to present on our website? (Please check one or more items.)
+    <br/>
+    <label for="news">
+      <input id="news" type="checkbox" name="political-news" value="political news" /> News</label>
+      <br/>
+    <label for="sports-news">
+      <input id="sports-news" type="checkbox" name="sports-news" value="sports news"/> Sports News</label>
+      <br/>
+    <label for="celebraty-news">
+      <input id="celebraty-news" name="celebraty-news" type="checkbox" value="celebraty news"/> Celebraty News</label>
+      <br/>
+    <label for="weather">
+      <input id="weather" type="checkbox" name="weather" value="weather" /> Weather
+    </label>
+    <br/>
+    <br/>
+    <textarea placeholder="If you have any suggestions about what we can do to better server you or other feedback, please tell us here."></textarea>
+    <br/>
+    <br/>
+    <input id="submit" type="submit" value="Submit Survey Form"/>
+    
+  </form>
+  
+  </body>
+
+</html>
