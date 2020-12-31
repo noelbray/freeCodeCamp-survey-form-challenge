@@ -1,0 +1,10 @@
+textarea {
+  height: 100px;
+  width: 50%;
+}
+
+textarea::placeholder {
+  color: rgb(0, 0, 0);
+  font-family: Arial;
+  font-weight: 500;
+}
